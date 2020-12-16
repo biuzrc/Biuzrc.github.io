@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/archives/2020/12/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
@@ -85,6 +85,8 @@
 
     <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -209,10 +211,8 @@
 <meta name="generator" content="Hexo 5.2.0"></head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -228,34 +228,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Biuzrc's Blog.
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                em.....
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -390,264 +377,10 @@ height:50vh;
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/11/15/Linux%E5%AD%A6%E4%B9%A003/" >
-            
-                <span>Linux学习03</span>
-        </a>
-        <div class="abstract-content">
-            Linux学习03文本编辑器VimVim工作模式
-VIm常用操作
-插入命令 a：在光标所在字符后插入 A：在光标所在行尾插入 i：在光标所在字符前插入 I：在光标所在行行首插入 o：在光标下插入新行 O：在光标上插入新行
-定位命令：set nu 设置行号：set nonu 取消行号gg 到第一行G 到最后一行nG 到第n行：n 到第n行$ 移至行尾0 移至行首
-删除命令x 删除光标所在处字符nx 删除光标所在处后n个字符dd 删除光标所在行，ndd删除n行dG 删除光标所在行到文件末尾内容D 删除光标所在处到行尾内容:n1,n2d 删除指定范围的行
-复制和剪切命令yy 复制当前行nyy ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/11/15</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Linux">Linux</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/11/08/Linux%E5%AD%A6%E4%B9%A002/" >
-            
-                <span>Linux学习02</span>
-        </a>
-        <div class="abstract-content">
-            Linux学习02Linux常用命令用户管理命令
-useradd  用户名作用： 添加新用户执行权限：root
-
-passwd 用户名作用：设置用户密码执行权限：所有用户
-
-who作用：查看登录用户信息执行权限：所有用户
-
-w作用：查看登录用户详细信息执行权限：所有用户
-
-
-压缩解压命令
-gzip [文件]作用：压缩文件压缩后文件格式：.gz
-gunzip [压缩文件]作用：解压缩.gz的压缩文件ps：只压缩文件且不保留原文件
-tar 选项[-zcf] [压缩后文件名] [目录]语法： -c 打包；-v 显示详细信息；-f 指定文件名；-z 打包同时压缩作用：打包目录压缩后文件格式：.t...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/11/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Linux">Linux</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/11/07/Linux%E5%AD%A6%E4%B9%A001/" >
-            
-                <span>Linux学习01</span>
-        </a>
-        <div class="abstract-content">
-            Linux学习01环境搭建使用VMware搭建linux虚拟机（ubantu）
-Linux的文件系统
-Home相当于windows的此电脑
-无盘符，只有一个根目录 /
-根目录下有5个目录，/bin、/etc、/home、/lib、/usr
-/home 主要放个人文件
-/usr 安装的应用程序
-
-Linux终端命令常用命令1
-pwd 查看所在路径
-ls 路径（或不填）查看该路径下所有内容（蓝色代表文件夹，白色代表文件）
-ls -l 以列表的形式擦看
-ls -a 显示隐藏文件
-ls -h -l 以k的单位显示大小
-ls *（通配符，代表一个或多个字符）文件后缀 只列出该后缀的文件
-ls ?(...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/11/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Linux">Linux</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2020/10/31/%E9%80%86%E5%90%9101/" >
-            
-                <span>逆向学习01——逆向工程基础</span>
-        </a>
-        <div class="abstract-content">
-            逆向学习01——逆向工程基础1. 了解“可执行文件”2. 汇编语言基本知识2.1 理解寄存器、内存和寻址
-什么是寄存器
-常见寄存器通用寄存器EAX、EBX、ECX、EDX、ESI、EDI栈顶指针寄存器ESP、栈底指针寄存器EBP指令计数器EIP（保存下一条即将执行的命令的地址）段寄存器CS、DS、SS、ES、FS、GS
-常用标志寄存器  AF、PF、SF、ZF、OF、CF
-寻址方式立即寻址、直接寻址、寄存器寻址、寄存器间接寻址、基址寻址、变址寻址、基址加变址寻址
-
-2.2 X86/X64汇编语言
-汇编指令的基本格式1操作码 [操作数1] [操作数2]
-掌握常见指令mov、lea、add、...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/10/31</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "逆向">逆向</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/666.jpg >
-    <div class="profile-name">Biuzrc</div>
-    
-    <div class="profile-signature">
-        hello
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-    
-        
-            
-                <a href="//github.com/biuzrc" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-                    <span>
-                        <a href= //www.baidu.com target="_black">friendA</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.google.com target="_black">friendB</a>
-                    </span>
-                
-            
-                
-                    <span>
-                        <a href= //www.bilibili.com target="_black">friendC</a>
-                    </span>
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">
